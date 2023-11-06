@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Shadow</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/pokeball.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <img src="img/quem.png" alt="Quem é esse pokemon?">
+    </header>
+
+    <section>
+        <div class="shadowImage">
+            <div id="shadowImages">
+            <img src="img/shadow/elc.png" draggable="true" alt="pokemon" ondragstart="drag(event)" id="drag" width="400px" height="300px">
+            </div>
+            <div id="shadowImage" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="pokemonImage">
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/am_png.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100px">
+            </div>
+            
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/ar_png.png" draggable="true" ondragstart="drag(event)" id="drag2" width="100px">
+            </div>
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/bel_png.png" draggable="true" ondragstart="drag(event)" id="drag3" width="100px">
+            </div>
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/elc_png.png" draggable="true" ondragstart="drag(event)" id="drag4" width="100px">
+            </div>
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/gas_png.png" draggable="true" ondragstart="drag(event)" id="drag5" width="100px">
+            </div>
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/gya_png.png" draggable="true" ondragstart="drag(event)" id="drag6" width="100px">
+            </div>
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/kro_png.png" draggable="true" ondragstart="drag(event)" id="drag7" width="100px">
+            </div>
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/ray_png.png" draggable="true" ondragstart="drag(event)" id="drag8" width="100px">
+            </div>
+
+            <div class="divPokemon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/pokemon/vol_png.png" draggable="true" ondragstart="drag(event)" id="drag9" width="100px">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <main>
+            <h2>Membros do grupo</h2>
+            <p>Descubra qual é esse o pokemon arrastando a imagem!</p>
+            <div class="membros">
+                <figure>
+                    <img src="img/spola157.webp" alt="spola157">
+                    <figcaption title="giovanni">Spola157</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/devbeterrabo.jpg" alt="beterrabo">
+                    <figcaption title="samuel">Dev Beterrabo</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/timexp.jfif" alt="bob">
+                    <figcaption title="julio">Dev Bob Glober</figcaption>
+                </figure>
+            </div>
+        </main>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
